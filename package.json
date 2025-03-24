@@ -1,0 +1,22 @@
+{
+  "name": "slack-agent",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --experimental-vectorize-bind-to-prod",
+    "typegen": "wrangler types --env-interface=CloudflareEnv",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.2.5",
+    "@slack/web-api": "^7.8.0",
+    "ai": "^4.1.61",
+    "hono": "^4.7.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.13.11",
+    "wrangler": "4.4.0"
+  },
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af"
+}

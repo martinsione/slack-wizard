@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "slack-agent",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "vectorize": [
+    {
+      // pnpm wrangler vectorize create aleph-wizard-vectorize --dimensions=1536 --metric=cosine
+      "binding": "VECTORIZE",
+      "index_name": "aleph-wizard-vectorize"
+    }
+  ]
+  // "observability": {
+  //   "enabled": true,
+  //   "head_sampling_rate": 1
+  // }
+}
